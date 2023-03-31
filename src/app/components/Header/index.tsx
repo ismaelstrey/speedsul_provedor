@@ -1,12 +1,7 @@
-interface link {
-    to: string;
-    name: string;
-    tile: string;
-    id?: string;
-}
+export const Header = () => {
+    return (
+        <div className="flex w-screen h-[200px] bg-[url('/img/logoAtivo.svg')] bg-cover">
 
-
-interface headerProps  {
-    links:[link]
+        </div>
+    )
 }
-export const Headers = ({links}:headerProps) => links.map(link => <li className="text-white" key={link.id}><a href="#">{link.to}</a></li>)

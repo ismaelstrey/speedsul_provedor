@@ -1,19 +1,19 @@
-import { Headers } from "./components/Header";
 import { Planos } from "./components/Planos";
+import { Header } from "./components/Header";
 
 export default function Home() {
-  const links  =[
+  const links = [
     {
-      to:"#",
+      to: "#",
       name: "string",
       tile: "string",
       id: "0123"
     }
   ]
   return (
-    <main className="bg-black flex w-screen h-screen">
-
-     <Planos/>
+    <main className="bg-slate-200 flex flex-col w-screen h-screen">
+      <Header />
+      <Planos />
     </main>
   )
 }
