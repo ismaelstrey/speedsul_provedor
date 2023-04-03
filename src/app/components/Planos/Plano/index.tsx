@@ -9,7 +9,7 @@ export const Plano = ({ id, name, mensalidade, roteador, link, download, upload,
             <div className="flex w-full"><Fibra /></div>
             <div className="text_plano_borda_preto text-center mt-4 text_plano"><div className="text-xl">Mensalidade: <span className="text-3xl font-bold">R$ {mensalidade}</span></div>
                 <div>Instalação: <span className="text-2xl p-2 font-bold text-yellow-300">{instalacao}</span></div>
-                <div>Wifi: <span>{roteador.map(data => <span>{data.name}</span>)}</span></div></div>
+                <div>Wifi: <span>{roteador.name}</span></div></div>
             <button className="bg-blue-600 p-2 rounded-lg border-2 border-white mt-4 shadow-lg hover:shadow-slate-200" >Saiba Mais</button>
         </div>
     )
