@@ -1,7 +1,15 @@
+"use client";
+import { useContext } from "react"
 import { Plano } from "./Plano"
+import { PlanosContext } from "./PlanosContext/PlanosContext"
+import { PlanosContextType } from "@/types/planos";
 
 
 export const Planos = () => {
+    const { planos } = useContext(PlanosContext) as PlanosContextType;
+
+
+
     const roteador =
     {
         "id": '01',
@@ -9,19 +17,20 @@ export const Planos = () => {
         "wifi": "5ghz"
 
     }
+    const RenderPlano = () => {
+
+        return planos.map(plano => <Plano key={plano.id} id={plano.id} download={plano.velocidade} mensalidade={plano.mensalidade} instalacao={plano.instalacao} name={plano.name} roteador={plano.roteador} link="#" upload="150" />)
+    }
 
     return (
-        <div className="text-white justify-center content-center items-center flex flex-col w-full">
-            <div className="flex container justify-between">
-                <Plano id="1" download="400" mensalidade="160,00" instalacao="Grátis" name="Plano de 400 mbps" roteador={roteador} link="#" upload="150" key='001' />
-                <Plano id="1" download="400" mensalidade="160,00" instalacao="Grátis" name="Plano de 400 mbps" roteador={roteador} link="#" upload="150" key='001' />
-                <Plano id="1" download="400" mensalidade="160,00" instalacao="Grátis" name="Plano de 400 mbps" roteador={roteador} link="#" upload="150" key='001' />
 
-            </div>
+        <div className="text-white justify-center content-center items-center flex flex-col w-full">
+
             <div className="flex container justify-evenly">
-                <Plano id="1" download="400" mensalidade="160,00" instalacao="Grátis" name="Plano de 400 mbps" roteador={roteador} link="#" upload="150" key='001' />
-                <Plano id="1" download="400" mensalidade="160,00" instalacao="Grátis" name="Plano de 400 mbps" roteador={roteador} link="#" upload="150" key='001' />
+
+                <RenderPlano />
             </div>
         </div>
+
     )
 }

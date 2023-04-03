@@ -8,7 +8,7 @@ interface tipoWifi {
 export interface PlanoProps {
     id: string;
     name: string;
-    download: string;
+    download: number;
     upload: string;
     mensalidade: string;
     roteador: tipoWifi;
