@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         'gameBackPlanos': "url('/img/gameBack.png')",
+        'backSite': "url('/img/backSite.png')",
+        'backFooter': "url('/img/backFooter.svg')",
       }
     },
   },

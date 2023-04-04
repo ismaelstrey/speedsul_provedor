@@ -13,8 +13,8 @@ export async function GET(request: Request) {
       name: '400 MB',
       mensalidade: "135,00",
       velocidade: 400,
-      instalacao: "gratis",
-      tipo: "fibra",
+      instalacao: "grátis",
+      tipo: "Fibra",
       upload: "75",
       roteador:
       {
@@ -32,7 +32,7 @@ export async function GET(request: Request) {
       velocidade: 150,
       upload: "75",
       instalacao: "RS 150,00",
-      tipo: "fibra",
+      tipo: "Fibra",
       roteador:
       {
         id: 1,
@@ -47,10 +47,10 @@ export async function GET(request: Request) {
       id: 2,
       name: '15 MB',
       mensalidade: "160,00",
-      velocidade: 150,
+      velocidade: 15,
       upload: "75",
       instalacao: "RS 150,00",
-      tipo: "fibra",
+      tipo: "Rádio",
       roteador:
       {
         id: 2,
@@ -64,7 +64,7 @@ export async function GET(request: Request) {
       id: 3,
       name: '10 MB',
       mensalidade: "120,00",
-      velocidade: 150,
+      velocidade: 10,
       upload: "75",
       instalacao: "RS 150,00",
       tipo: "Rádio",
@@ -83,7 +83,7 @@ export async function GET(request: Request) {
       mensalidade: "100,00",
       velocidade: 5,
       upload: "2,5",
-      instalacao: "RS 100,00",
+      instalacao: "RS 200,00",
       tipo: "Rádio",
       roteador:
       {

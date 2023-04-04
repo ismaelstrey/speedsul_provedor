@@ -20,4 +20,19 @@
   
 .text_fibra{
     text-shadow: rgba(255,255,255, 0.5) 0px 0px 5px, rgba(255,255,255, 0.5) 0px 0px 10px, rgba(255,255,255, 0.2) 0px 0px 15px, rgba(255, 45, 149, 0.3) 0px 0px 20px, rgba(255, 45, 149, 0.3) 0px 0px 30px, rgba(255, 45, 149, 0.3) 0px 0px 40px, rgba(255, 45, 149, 0.3) 0px 0px 50px, rgba(255, 45, 149, 0.3) 0px 0px 75px;}
-  
+
+.gradient {
+    /* Primeiro passo: definir um degradê como fundo */
+    background-image: linear-gradient(to bottom, rgb(216, 149, 5), rgb(255, 251, 7), rgb(231, 173, 13));
+    
+    /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+    background-clip: text;
+    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+    
+    /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+    -webkit-text-fill-color: transparent;
+    
+    /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+    color: black;
+    
+    }

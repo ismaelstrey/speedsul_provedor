@@ -9,15 +9,16 @@
 </g>
 <g>
 	<g id="Camada_2_00000180364267231244858840000017713774310019247271_">
-		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-0.1117" y1="94.0097" x2="1900.8883" y2="94.0097">
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-0.1" y1="1012.4806" x2="1900.9" y2="1012.4806" gradientTransform="matrix(-1 0 0 1 1900.8 -906.9806)">
 			<stop  offset="0" style="stop-color:#7500AA"/>
 			<stop  offset="0.4721" style="stop-color:#FF3F5A"/>
 			<stop  offset="1" style="stop-color:#FFC700"/>
 		</linearGradient>
-		<path class="st0" d="M-0.1,121c992-47,733,52,1901,52c0-74,0-158,0-158H-0.1V121z"/>
+		<path class="st0" d="M1900.9,208.9V54.1c-992,47-733-52-1901-52c0,74,0,206.8,0,206.8H1900.9L1900.9,208.9z"/>
 	</g>
 	<g id="Camada_2_00000118365009896463134320000001134709515417364124_">
-		<path d="M-0.1,106c992-47,733,52,1901,52c0-74,0-158,0-158H-0.1V106z"/>
+		<path d="M1900.9,223.9V69.1c-992,47-733-52-1901-52c0,74,0,206.8,0,206.8H1900.9L1900.9,223.9z"/>
 	</g>
 </g>
 </svg>
