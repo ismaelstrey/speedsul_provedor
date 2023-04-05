@@ -7,6 +7,7 @@ module.exports = {
         'gameBackPlanos': "url('/img/gameBack.png')",
         'backSite': "url('/img/backSite.png')",
         'backFooter': "url('/img/backFooter.svg')",
+        'backLogo': "url('/img/logo.svg')",
       }
     },
   },
