@@ -1,0 +1,77 @@
+[
+    {
+        "id": 0,
+        "name": "400 MB",
+        "mensalidade": "135,00",
+        "velocidade": 400,
+        "instalacao": "grátis",
+        "tipo": "Fibra",
+        "upload": "75",
+        "roteador": {
+            "id": 0,
+            "name": "intelbras",
+            "wifi": "2.4 Ghz, 5.8 Ghz",
+            "modelo": "sw-150"
+        }
+    },
+    {
+        "id": 1,
+        "name": "150 MB",
+        "mensalidade": "100,00",
+        "velocidade": 150,
+        "upload": "75",
+        "instalacao": "RS 150,00",
+        "tipo": "Fibra",
+        "roteador": {
+            "id": 1,
+            "name": "intelbras",
+            "wifi": "2.4 Ghz, 5.8 Ghz",
+            "modelo": "sw-150"
+        }
+    },
+    {
+        "id": 2,
+        "name": "15 MB",
+        "mensalidade": "160,00",
+        "velocidade": 15,
+        "upload": "75",
+        "instalacao": "RS 150,00",
+        "tipo": "Rádio",
+        "roteador": {
+            "id": 2,
+            "name": "intelbras",
+            "wifi": "2.4 Ghz, 5.8 Ghz",
+            "modelo": "sw-150"
+        }
+    },
+    {
+        "id": 3,
+        "name": "10 MB",
+        "mensalidade": "120,00",
+        "velocidade": 10,
+        "upload": "75",
+        "instalacao": "RS 150,00",
+        "tipo": "Rádio",
+        "roteador": {
+            "id": 3,
+            "name": "intelbras",
+            "wifi": "2.4 Ghz, 5.8 Ghz",
+            "modelo": "sw-150"
+        }
+    },
+    {
+        "id": 4,
+        "name": "5 MB",
+        "mensalidade": "100,00",
+        "velocidade": 5,
+        "upload": "2,5",
+        "instalacao": "RS 200,00",
+        "tipo": "Rádio",
+        "roteador": {
+            "id": 4,
+            "name": "intelbras",
+            "wifi": "2.4 Ghz, 5.8 Ghz",
+            "modelo": "sw-150"
+        }
+    }
+]
