@@ -1,5 +1,5 @@
 const Footer = () => {
-    return <footer className="flex flex-col bg-backFooter bg-cover w-screen h-[200px] absolute bottom-0">
+    return <footer className="flex flex-col bg-backFooter bg-cover w-full h-[200px] static bottom-0">
 
     </footer>
 }

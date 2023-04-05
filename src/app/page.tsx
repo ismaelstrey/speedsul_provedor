@@ -14,7 +14,7 @@ export default function Home() {
   ]
   return (
     <PlanosProvider>
-      <main className=" bg-backSite bg-repeat flex flex-col w-screen h-screen">
+      <main className=" bg-backSite bg-repeat flex flex-col w-screen h-full">
         <Header />
         <Planos />
         <Footer />
