@@ -1,5 +1,5 @@
 export interface PlanosType {
-    id: string;
+    id: number;
     name: string;
     mensalidade: string;
     velocidade: number,
@@ -8,7 +8,7 @@ export interface PlanosType {
     tipo: string;
     roteador:
     {
-        id: 0,
+        id: number,
         name: string;
         wifi: string;
         modelo: string;
