@@ -3,7 +3,6 @@ import { Fibra } from "../../Tecnologia/Fibra"
 
 export const Plano = ({ id, name, mensalidade, roteador, velocidade, upload, instalacao, tipo }: PlanosType) => {
     const colorPlano = (tipoCor: string) => tipoCor === 'Fibra' ? "text_plano_borda_azul" : "gradient"
-
     return (
         <div className="flex flex-col justify-center m-4 content-center items-center rounded-full bg-black  w-80 h-80 border-8 border-blue-700 border-solid bg-[url('/img/gameBack.png')] bg-cover hover:border-blue-200">
             <div className={`font-bold text-5xl ${colorPlano(tipo)}`}>{velocidade} MB</div>

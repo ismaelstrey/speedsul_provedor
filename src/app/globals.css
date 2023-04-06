@@ -36,6 +36,42 @@
     color: black;
     
     }
+
+    .gradient_text {
+      /* Primeiro passo: definir um degradê como fundo */
+      background-image: linear-gradient(to right, rgb(114, 3, 136), rgb(255, 7, 243), rgb(231, 173, 13));
+
+      
+      /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+      background-clip: text;
+      -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+      
+      /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+      -webkit-text-fill-color: transparent;
+      
+      /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+      color: black;
+      
+      }
+      .gradient_text:hover {
+        /* Primeiro passo: definir um degradê como fundo */
+        background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(199, 201, 202), rgb(255, 255, 255));
+        
+        /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+        background-clip: text;
+        -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+        
+        /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+        -webkit-text-fill-color: transparent;
+        
+        /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+        color: black;
+        
+        
+        }
+
+
+
     body::-webkit-scrollbar {
   width: 10px;               /* width of the entire scrollbar */
   height: 20px;
