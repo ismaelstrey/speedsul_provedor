@@ -27,9 +27,7 @@ const Footer = () => {
                         <h1 className="text-xl font-extrabold mb-4 gradient_text"><span className="gradient_text">Cobertura</span></h1>
                         <span>Maquiné-RS</span>
                         <div><span>Cordenadas</span><span>{latitude},{longitude}</span></div>
-                        <div>
-                            <a href="https://www.findlatitudeandlongitude.com/?lat=-29.566566&lon=-50.7904&bi=11">-29° 33' 59.639", -50° 47' 25.44"</a>
-                        </div>
+
                     </div>
                 </div>
                 <div className=" w-1/3 text-center  min-[700px]:w-1/3 max-[800px]:w-screen relative -top-12 h-full ">
