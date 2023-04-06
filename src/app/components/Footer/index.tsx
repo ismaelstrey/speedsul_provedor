@@ -8,6 +8,7 @@ const Footer = () => {
     const { localizacao } = useContext(PlanosContext) as PlanosContextType;
 
     const { latitude, longitude } = localizacao
+    const url = `https://www.google.com/maps/@${latitude},${longitude},243m/data=!3m1!1e3?hl=pt-BR`
 
     return <footer className="flex flex-col bg-backFooter bg-cover w-full h-full static bottom-0 ">
         <div className="flex relative top-36 flex-col w-screen bg-black h-full justify-center items-center content-center">
@@ -17,7 +18,7 @@ const Footer = () => {
                         <h1 className="text-xl font-extrabold mb-4"><span className="gradient_text">Links</span></h1>
                         <span>Speedtest</span>
                         <ul>
-                            <li><a href={`https://wa.me/5551997940960?text=Plano 15 mb ${latitude},${longitude}`}>Send</a></li>
+                            <li><a href={`https://wa.me/5551997940960?text=Plano 15 mb ${url}`}>Send</a></li>
                         </ul>
                     </div>
                 </div>
@@ -26,6 +27,9 @@ const Footer = () => {
                         <h1 className="text-xl font-extrabold mb-4 gradient_text"><span className="gradient_text">Cobertura</span></h1>
                         <span>Maquiné-RS</span>
                         <div><span>Cordenadas</span><span>{latitude},{longitude}</span></div>
+                        <div>
+                            <a href="https://www.findlatitudeandlongitude.com/?lat=-29.566566&lon=-50.7904&bi=11">-29° 33' 59.639", -50° 47' 25.44"</a>
+                        </div>
                     </div>
                 </div>
                 <div className=" w-1/3 text-center  min-[700px]:w-1/3 max-[800px]:w-screen relative -top-12 h-full ">
