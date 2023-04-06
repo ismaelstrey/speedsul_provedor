@@ -4,9 +4,7 @@ import { PlanosContext } from "../Planos/PlanosContext/PlanosContext"
 import { PlanosContextType } from "@/types/planos";
 
 const Footer = () => {
-
     const { localizacao } = useContext(PlanosContext) as PlanosContextType;
-
     const { latitude, longitude } = localizacao
     const url = `https://www.google.com/maps/@${latitude},${longitude},243m/data=!3m1!1e3?hl=pt-BR`
 
@@ -27,7 +25,6 @@ const Footer = () => {
                         <h1 className="text-xl font-extrabold mb-4 gradient_text"><span className="gradient_text">Cobertura</span></h1>
                         <span>Maquiné-RS</span>
                         <div><span>Cordenadas</span><span>{latitude},{longitude}</span></div>
-
                     </div>
                 </div>
                 <div className=" w-1/3 text-center  min-[700px]:w-1/3 max-[800px]:w-screen relative -top-12 h-full ">
@@ -37,7 +34,6 @@ const Footer = () => {
                         <span className="ml-14 font-bold ">Fone: <a href="tel:+55(51)997940960">(51)9 9794-0960</a></span>
                     </div>
                 </div>
-
             </div>
         </div>
     </footer>
