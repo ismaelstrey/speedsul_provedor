@@ -9,7 +9,7 @@ export const Plano = ({ mensalidade, roteador, velocidade, instalacao, tipo }: P
 
     const geraMessage = (message: string) => {
         const url = localizacao ? `https://www.google.com/maps/@${latitude},${longitude},243m/data=!3m1!1e3?hl=pt-BR` : ''
-        const msg = `https://wa.me/5551997940960?text=${message}: Plano selecionado:Mensalidade 👉 ${mensalidade}  🌐 ${url}`
+        const msg = `https://wa.me/5551997940960?text=${message}: Plano selecionado: 👉 ${mensalidade}  🌐 ${url}`
         return msg
     }
 
