@@ -14,14 +14,16 @@ export interface PlanosType {
         modelo: string;
     }
 }
-export interface CordenadasType {
+export type CordenadasType = {
+
     latitude: number;
     longitude: number;
+
 }
 
 export type PlanosContextType = {
     planos: PlanosType[];
-    localizacao: CordenadasType[];
+    localizacao: CordenadasType;
     // loadPlanos: () => void;
     getPlanos: () => void;
     getLocalizacao: () => void;

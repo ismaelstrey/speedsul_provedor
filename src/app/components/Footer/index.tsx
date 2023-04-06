@@ -6,7 +6,8 @@ import { PlanosContextType } from "@/types/planos";
 const Footer = () => {
 
     const { localizacao } = useContext(PlanosContext) as PlanosContextType;
-    const { latitude, longitude } = localizacao[0];
+
+    const { latitude, longitude } = localizacao
 
     return <footer className="flex flex-col bg-backFooter bg-cover w-full h-full static bottom-0 ">
         <div className="flex relative top-36 flex-col w-screen bg-black h-full justify-center items-center content-center">
