@@ -1,3 +1,6 @@
+import Footer from './components/Footer'
+import { Header } from './components/Header'
+import PlanosProvider from './components/Planos/PlanosContext/PlanosContext'
 import './globals.css'
 
 export const metadata = {
@@ -12,7 +15,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body>
+        <PlanosProvider>
+          <main className=" bg-backSite bg-repeat flex flex-col w-screen h-full">
+            <Header />
+            <div className='min-h-[calc(100vh-496px)]'>{children}</div>
+            <Footer />
+          </main>
+        </PlanosProvider>
+      </body>
     </html>
   )
 }
