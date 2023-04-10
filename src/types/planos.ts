@@ -24,4 +24,5 @@ export type PlanosContextType = {
     // loadPlanos: () => void;
     getPlanos: () => void;
     getLocalizacao: () => void;
+    loadPlanos: boolean;
 }
