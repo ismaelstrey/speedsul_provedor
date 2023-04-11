@@ -12,14 +12,19 @@ export const Planos = () => {
     const { planos, loadPlanos } = useContext(PlanosContext) as PlanosContextType;
     const filterPlano = (planoList: PlanosType[], filtro: string) => planoList.filter(list => list.tipo === filtro)
     return (
-        loadPlanos ? <div className="text-white justify-center content-center items-center flex flex-col w-full">
-            <div className="flex container justify-evenly w-full flex-wrap">
-                <RenderPlano list={filterPlano(planos, "Fibra")} />
+        loadPlanos ?
+
+            <div className="text-white justify-center content-center items-center flex flex-col w-full -mt-24 mb-4">
+                <div className=" flex container p-8 flex-col">
+                    <div className="flex justify-evenly w-full flex-wrap">
+                        <RenderPlano list={filterPlano(planos, "Fibra")} />
+                    </div>
+                    <div className="flex justify-evenly w-full flex-wrap">
+                        <RenderPlano list={filterPlano(planos, "Rádio")} />
+                    </div>
+                </div>
             </div>
-            <div className="flex container justify-evenly w-full flex-wrap">
-                <RenderPlano list={filterPlano(planos, "Rádio")} />
-            </div>
-        </div>
+
             : <div className="flex absolute bg-black w-screen h-screen z-50 top-0 justify-center content-center items-center">
 
                 <div className="gradient_text animate-pulse h-40"> <div className="bg-backLogo bg-cover w-[204px] h-[54px] mt-4 ml-4 m-2"></div><span>Carregando...</span></div>
