@@ -4,7 +4,7 @@ import Image from "next/image"
 const Produto = ({ titulo, descricao, tags, img }: Produto) => {
     return (
         <div className="max-w-sm rounded overflow-hidden shadow-lg hover:shadow-gray-800 my-8" title={titulo} >
-            <Image className="w-full" src={img} alt={titulo} height={100} width={100} />
+            <Image className="w-full" src={img} alt={titulo} height={535} width={800} />
             <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">{titulo}</div>
                 <p className="text-gray-700 text-base">
