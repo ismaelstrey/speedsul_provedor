@@ -1,0 +1,60 @@
+[
+    {
+        "img": "/img/internet.jpg",
+        "titulo": "Acesso a internet",
+        "descricao": "Voçê já tem observado como a internet tem se mostrado indispensável em nosso mundo cada vez mais digital tanto para estudos negócios e lazer.",
+        "tags": [
+            {
+                "name": "internet"
+            },
+            {
+                "name": "Rádio"
+            },
+            {
+                "name": "Fibra"
+            }
+        ]
+    },
+    {
+        "img": "/img/internetEmpresa.jpg",
+        "titulo": "Acesso a entre empresas",
+        "descricao": "Com o avaço das tecnologias os negócios tende a cada vez mais depender de serviços que utilizam a internet para o bom funcionamento.",
+        "tags": [
+            {
+                "name": "Rede"
+            },
+            {
+                "name": "LAN TO LAN"
+            },
+            {
+                "name": "VPN"
+            }
+        ]
+    },
+    {
+        "img": "/img/internetSitio.jpg",
+        "titulo": "Locais afastados",
+        "descricao": "Trabalhamos com tecnologia de acesso através de fibra otica e radios digitais para regipos de dificil acesso. Cosultenos para ver a disponibilidade.",
+        "tags": [
+            {
+                "name": "Internet"
+            },
+            {
+                "name": "Rural"
+            }
+        ]
+    },
+    {
+        "img": "/img/internetPublico.jpg",
+        "titulo": "Atendimento a orgão publicos",
+        "descricao": "Serviços de internet e rede privada para prefeituras, escolas creches, postos de saude etc.",
+        "tags": [
+            {
+                "name": "Internet"
+            },
+            {
+                "name": "Rural"
+            }
+        ]
+    }
+]

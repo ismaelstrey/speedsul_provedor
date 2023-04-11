@@ -2,6 +2,7 @@
 import { useContext } from "react"
 import { PlanosContext } from "../Planos/PlanosContext/PlanosContext"
 import { PlanosContextType } from "@/types/planos";
+import Link from "next/link";
 
 const Footer = () => {
     const { localizacao } = useContext(PlanosContext) as PlanosContextType;
@@ -14,9 +15,10 @@ const Footer = () => {
                 <div className="w-1/3 text-center  min-[700px]:w-1/3 max-[800px]:w-screen">
                     <div className="flex flex-col relative -top-24">
                         <h1 className="text-xl font-extrabold mb-4"><span className="gradient_text">Links</span></h1>
-                        <span>Speedtest</span>
-                        <ul>
-                            <li><a href={`https://wa.me/5551997940960?text=Plano 15 mb ${url}`}>Send</a></li>
+                        <ul className="flex flex-col gap-8 font-bold">
+                            <li><Link href="/" className='text-white hover:text-fuchsia-700'>Inicio</Link></li>
+                            <li><Link href="/produtos" className='text-white hover:text-fuchsia-700'>Produtos</Link></li>
+                            <li><Link href="/servicos" className='text-white hover:text-fuchsia-700'>Serviços</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -29,7 +31,7 @@ const Footer = () => {
                 </div>
                 <div className=" w-1/3 text-center  min-[700px]:w-1/3 max-[800px]:w-screen relative -top-12 h-full ">
                     <div className="flex flex-col items-center">
-                        <h1 className="text-xl font-extrabold gradient_text">Contato</h1>
+                        <h1 className="text-xl font-extrabold gradient_text" id="contato">Contato</h1>
                         <img src="/whatsapp.svg" width={100} alt="Wats" />
                         <span className="ml-14 font-bold ">Fone: <a href="tel:+55(51)997940960">(51)9 9794-0960</a></span>
                     </div>
