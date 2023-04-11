@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body>
         <PlanosProvider>
-          <main className=" bg-backSite bg-repeat flex flex-col w-screen h-full">
+          <main className=" bg-backSite bg-cover bg-repeat flex flex-col w-screen h-full">
             <Header />
             <div className='min-h-[calc(100vh-496px)]'>{children}</div>
             <Footer />
