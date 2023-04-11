@@ -8,7 +8,6 @@ const PlanosProvider: FC<any> = ({ children }) => {
     const [planos, setPlanos] = useState<PlanosType[]>([])
     const [loadPlanos, setLoadPlanos] = useState<any>(false)
     const [localizacao, setLocalizacao] = useState<CordenadasType | any>([])
-    console.log(loadPlanos)
     const getPlanos = async () => await setPlanos(PlanoData)
     const getLocalizacao = () => navigator.geolocation.getCurrentPosition(function (position) {
         const { latitude, longitude } = position.coords
