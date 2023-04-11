@@ -6,7 +6,7 @@ export default function Home() {
 
   return (
     <div className="flex w-screen justify-center">
-      <div className="flex container w-full bg-white rounded-lg shadow-lg shadow-amber-800 mb-3 flex-wrap justify-evenly">
+      <div className="flex container w-full bg-white rounded-lg shadow-lg shadow-amber-800 mb-3 gap-2 flex-wrap justify-evenly">
         <RenderProdutos />
       </div>
     </div>
