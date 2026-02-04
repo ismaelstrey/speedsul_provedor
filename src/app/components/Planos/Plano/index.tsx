@@ -13,15 +13,46 @@ export const Plano = ({ mensalidade, roteador, velocidade, instalacao, tipo }: P
         return msg
     }
 
-    const colorPlano = (tipoCor: string) => tipoCor === 'Fibra' ? "text_plano_borda_azul" : "gradient"
+    const colorPlano = (tipoCor: string) =>
+        tipoCor === 'Fibra' ? "from-emerald-400 via-cyan-300 to-fuchsia-400" : "from-sky-400 via-purple-400 to-rose-400"
     return (
-        <div className="flex flex-col justify-center mt-14 content-center items-center rounded-full bg-black  w-80 h-80 border-8 border-blue-700 border-solid bg-[url('/img/gameBack.png')] bg-cover hover:border-blue-200">
-            <div className={`font-bold text-5xl ${colorPlano(tipo)}`}>{velocidade} MB</div>
-            <div className="flex w-full"><Fibra tipo={tipo} /></div>
-            <div className="text_plano_borda_preto text-center mt-4 text_plano"><div className="text-xl">Mensalidade: <span className="text-3xl font-bold">R$ {mensalidade}</span></div>
-                <div>Instalação: <span className="text-2xl p-2 font-bold text-yellow-300">{instalacao}</span></div>
-                <div>Wifi: <span>{roteador.wifi}</span></div></div>
-            <a className="bg-blue-600 p-2 rounded-lg border-2 border-white mt-4 shadow-lg hover:shadow-slate-200" href={geraMessage("Costaria de saber mais sobre o ")}>Saiba mais</a>
+        <div className="glow-card group flex h-full flex-col justify-between rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,rgba(15,23,42,0.9),rgba(2,6,23,0.95))] p-6 shadow-[0_30px_80px_-60px_rgba(15,23,42,1)] transition hover:-translate-y-2 hover:border-white/30">
+            <div className="flex items-start justify-between">
+                <div>
+                    <span className="text-xs uppercase tracking-[0.4em] text-white/60">{tipo}</span>
+                    <div
+                        className={`mt-2 text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r ${colorPlano(tipo)} animate-[gradient-shift_8s_ease_infinite]`}
+                    >
+                        {velocidade} MB
+                    </div>
+                </div>
+                <div className="rounded-full border border-white/10 bg-white/10 px-3 py-1 text-xs uppercase tracking-[0.2em] text-white/70 backdrop-blur">
+                    Ultra
+                </div>
+            </div>
+            <div className="mt-4 flex w-full">
+                <Fibra tipo={tipo} />
+            </div>
+            <div className="mt-6 flex flex-col gap-2 text-sm text-white/70">
+                <div className="flex items-center justify-between">
+                    <span>Mensalidade</span>
+                    <span className="text-lg font-semibold text-white">R$ {mensalidade}</span>
+                </div>
+                <div className="flex items-center justify-between">
+                    <span>Instalação</span>
+                    <span className="font-semibold text-emerald-200">{instalacao}</span>
+                </div>
+                <div className="flex items-center justify-between">
+                    <span>Wi-Fi</span>
+                    <span className="text-white">{roteador.wifi}</span>
+                </div>
+            </div>
+            <a
+                className="mt-6 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-cyan-400 via-fuchsia-400 to-amber-300 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-950 shadow-[0_12px_30px_-18px_rgba(244,114,182,1)] transition hover:scale-[1.02]"
+                href={geraMessage("Gostaria de saber mais sobre o ")}
+            >
+                Quero este plano
+            </a>
         </div>
     )
 }

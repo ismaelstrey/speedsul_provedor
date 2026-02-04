@@ -3,9 +3,13 @@ interface tipo {
 }
 export const Fibra = ({ tipo }: tipo) => {
     const color = (cor: string) => {
-        return cor === "Fibra" ? 'text-[#d508d3] ' : ' text-[#00a5f6] '
+        return cor === "Fibra" ? 'from-emerald-300 via-cyan-300 to-fuchsia-400' : 'from-sky-300 via-purple-400 to-rose-400'
     }
     return (
-        <div className={`flex text-2xl ${color(tipo)} font-extrabold px-2 rounded-lg realative ml-6 mt-3 text_fibra text_plano_borda_preto`}>{tipo}</div>
+        <div
+            className={`flex text-2xl font-extrabold px-2 rounded-lg relative ml-6 mt-3 text-transparent bg-clip-text bg-gradient-to-r ${color(tipo)} animate-[gradient-shift_8s_ease_infinite]`}
+        >
+            {tipo}
+        </div>
     )
 }
