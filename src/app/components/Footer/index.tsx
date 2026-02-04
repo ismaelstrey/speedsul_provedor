@@ -17,40 +17,61 @@ const Footer = () => {
         return msg
     }
 
-    return <footer className="flex flex-col bg-backFooter bg-cover w-full h-full static bottom-0 ">
-        <div className="flex relative top-36 flex-col w-screen bg-black h-full justify-center items-center content-center">
-            <div className="flex h-full text-white container min-[700px]:flex-row max-[800px]:flex-col  min-[1980px]:mt-14">
-                <div className="w-1/3 text-center  min-[700px]:w-1/3 max-[800px]:w-screen">
-                    <div className="flex flex-col relative -top-24">
-                        <h1 className="text-xl font-extrabold mb-4"><span className="gradient_text">Links</span></h1>
-                        <ul className="flex flex-col gap-8 font-bold">
-                            <li><Link href="/" className='text-white hover:text-fuchsia-700'>Inicio</Link></li>
-                            <li><Link href="/produtos" className='text-white hover:text-fuchsia-700'>Produtos</Link></li>
-                            <li><Link href="/servicos" className='text-white hover:text-fuchsia-700'>Serviços</Link></li>
-                        </ul>
+    return (
+        <footer className="border-t border-white/10 bg-slate-950">
+            <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 py-12 text-white/70 md:flex-row">
+                <div className="flex flex-1 flex-col gap-4">
+                    <div className="bg-backLogo bg-cover w-[180px] h-[50px]"></div>
+                    <p className="text-sm leading-relaxed text-white/60">
+                        Conectividade premium para sua casa e seu negócio, com suporte humano e
+                        performance de ponta.
+                    </p>
+                    <div className="flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-white/50">
+                        <span>SpeedSul</span>
+                        <span className="h-1 w-1 rounded-full bg-white/30"></span>
+                        <span>Internet de alta performance</span>
                     </div>
                 </div>
-                <div className="w-1/3 text-center  min-[700px]:w-1/3 max-[800px]:w-screen relative -top-20">
-                    <div>
-                        <h1 className="text-xl font-extrabold mb-4 gradient_text"><span className="gradient_text">Cobertura</span></h1>
-                        <span>Maquiné-RS</span>
-                        <div className="mt-5"><div>
-                            <h1>Minha Localização</h1>
-                            <span>{latitude},{longitude}</span>
-                        </div></div>
-                    </div>
+                <div className="flex flex-1 flex-col gap-3 text-sm">
+                    <h2 className="text-base font-semibold text-white">Links rápidos</h2>
+                    <Link href="/" className="transition hover:text-white">Início</Link>
+                    <Link href="/produtos" className="transition hover:text-white">Produtos</Link>
+                    <Link href="/servicos" className="transition hover:text-white">Serviços</Link>
                 </div>
-                <div className=" w-1/3 text-center  min-[700px]:w-1/3 max-[800px]:w-screen relative -top-12 h-full ">
-                    <div className="flex flex-col items-center">
-                        <h1 className="text-xl font-extrabold gradient_text" id="contato">Contato</h1>
-                        <a href={geraMessage("Tem cobertura em minha região?")}><Image className="cursor-pointer" src="/whatsapp.svg" width={100} height={100} alt="Wats" /></a>
-
-                        <span className="ml-14 font-bold ">Fone: <a href="tel:+55(51)997940960">(51)9 9794-0960</a></span>
-                    </div>
+                <div className="flex flex-1 flex-col gap-3 text-sm">
+                    <h2 className="text-base font-semibold text-white">Cobertura</h2>
+                    <span>Maquiné - RS</span>
+                    <span className="text-white/50">Minha localização</span>
+                    <span className="text-xs text-white/40">{latitude},{longitude}</span>
+                    <a
+                        className="inline-flex items-center gap-2 text-white transition hover:text-white/90"
+                        href={url}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Ver no mapa
+                        <span aria-hidden>↗</span>
+                    </a>
+                </div>
+                <div className="flex flex-1 flex-col gap-4 text-sm">
+                    <h2 className="text-base font-semibold text-white" id="contato">Contato</h2>
+                    <a href={geraMessage("Tem cobertura em minha região?")} className="inline-flex items-center gap-3">
+                        <Image className="cursor-pointer" src="/whatsapp.svg" width={56} height={56} alt="WhatsApp" />
+                        <div>
+                            <span className="block text-white">Fale com nosso time</span>
+                            <span className="text-xs text-white/50">Resposta rápida no WhatsApp</span>
+                        </div>
+                    </a>
+                    <span className="text-white/60">
+                        Fone: <a className="text-white" href="tel:+55(51)997940960">(51) 9 9794-0960</a>
+                    </span>
                 </div>
             </div>
-        </div>
-    </footer>
+            <div className="border-t border-white/10 py-6 text-center text-xs text-white/40">
+                © 2024 SpeedSul. Todos os direitos reservados.
+            </div>
+        </footer>
+    )
 }
 
 
