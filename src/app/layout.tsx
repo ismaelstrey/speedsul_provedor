@@ -15,11 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body>
+      <body className="bg-slate-950 text-white antialiased">
         <PlanosProvider>
-          <main className=" bg-backSite bg-cover bg-repeat flex flex-col w-screen h-full">
+          <main className="flex min-h-screen flex-col bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.18),_transparent_45%),radial-gradient(circle_at_top_right,_rgba(236,72,153,0.18),_transparent_40%)]">
             <Header />
-            <div className='min-h-[calc(100vh-496px)]'>{children}</div>
+            <div className="flex-1">{children}</div>
             <Footer />
           </main>
         </PlanosProvider>
